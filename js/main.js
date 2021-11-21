@@ -1,13 +1,13 @@
 $(function(){
-
+	// ============preloader==========
 	$(window).on('load', function(){
         $('.preloader').delay(500).fadeOut('slow', function(){
         	$(this).attr('style', 'display: none !important');
         });
     });
-
+// ============slider gallery==========
 	baguetteBox.run('.gallery');
-
+	// ============scroll btn==========
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 300) {
 			$('.scrollToTop').fadeIn();
